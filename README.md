@@ -14,10 +14,7 @@
 
 ##### Aluno: Vinícius Matheus Veríssimo da Silva -- 20191000933
 
-  
-
 <h2  align="center"><strong>Codificação de Huffman</strong></h2>
-
 
 ## 1 - Introdução
 
@@ -37,21 +34,19 @@ A Árvore de Huffman é uma árvore binária completa onde todos as folhas são 
 
 4. Enquanto a lista tiver mais de 1 nó, fazer:
 
-	- Remover os dois elementos com menor frequência da lista;
+   - Remover os dois elementos com menor frequência da lista;
 
-	- Criar um nó intermediário de modo que ele será pai dos dois elementos removidos, sendo o filho da esquerda o que possui a maior frequência dos dois, e o da direita o que possui menor frequência. A frequência, ou peso, do nó pai será a soma dos valores dos filhos.
+   - Criar um nó intermediário de modo que ele será pai dos dois elementos removidos, sendo o filho da esquerda o que possui a maior frequência dos dois, e o da direita o que possui menor frequência. A frequência, ou peso, do nó pai será a soma dos valores dos filhos.
 
-	 - Inserir esse novo elemento da lista;
+   - Inserir esse novo elemento da lista;
 
-	- Re-ordenar a lista em ordem decrescente.
+   - Re-ordenar a lista em ordem decrescente.
 
 5. A árvore estará completa e o único elemento restante será a raiz da árvore.
 
 #### Exemplo
 
 Considerando um texto contendo as letras A, B, C, D, E e F, com as frequências 6, 5, 4, 3, 2, 1, respectivamente.
-
-  
 
 Após feita a lista de folhas com o seus respectivos pesos. Remove-se os dois nós menos frequentes (E e F), cria-se um novo nó que será pai dos dois nós removidos (E+F) e terá como peso a soma dos pesos deles dois (3). O novo nó é inserido na lista ordenada de forma decrescente.
 
@@ -88,10 +83,10 @@ A árvore está finalizada.
 ### 2.3 - Decodificação
 
 1. Usar o código para navegar na árvore;
-	- Quando encontrar um 0, andar para o filho da esquerda, caso encontre um 1, andar para o filho da direita;
-	- Quando atingir uma folha, escolher aquele elemento;
 
-	- Voltar para a raiz.
+   - Quando encontrar um 0, andar para o filho da esquerda, caso encontre um 1, andar para o filho da direita;
+   - Quando atingir uma folha, escolher aquele elemento;
+   - Voltar para a raiz.
 
 2. Repetir o processo **1** até que termine o código.
 
